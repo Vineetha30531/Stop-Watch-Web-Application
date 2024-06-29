@@ -1,0 +1,124 @@
+:root {
+    --primary-color: #e8ebee;
+    --button-hover-lighten: 10%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: rgb(16, 15, 15);
+}
+
+#myH1 {
+    margin-top: 100px;
+    font-size: 4rem;
+    font-family: sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 50px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+}
+
+#display {
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    color: hsl(0, 0%, 30%);
+    text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.75);
+    margin-bottom: 25px;
+}
+
+#laps {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+#laps li {
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 30%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#controls button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    min-width: 125px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+#startBtn {
+    background-color: hsl(115, 100%, 40%);
+}
+
+#startBtn:hover {
+    background-color: hsl(115, 100%, calc(40% + var(--button-hover-lighten)));
+}
+
+#stopBtn {
+    background-color: hsl(10, 90%, 50%);
+}
+
+#stopBtn:hover {
+    background-color: hsl(10, 90%, calc(50% + var(--button-hover-lighten)));
+}
+
+#resetBtn {
+    background-color: hsl(205, 90%, 60%);
+}
+
+#resetBtn:hover {
+    background-color: hsl(205, 90%, calc(60% + var(--button-hover-lighten)));
+}
+
+#lapBtn {
+    background-color: hsl(250, 80%, 40%);
+}
+
+#lapBtn:hover {
+    background-color: hsl(250, 80%, calc(40% + var(--button-hover-lighten)));
+}
+
+#resetLapBtn {
+    background-color: hsl(63, 96%, 49%);
+}
+
+#resetLapBtn:hover {
+    background-color: hsl(63, 96%, calc(49% + var(--button-hover-lighten)));
+}
+
+#restartBtn {
+    background-color: hsl(30, 100%, 50%);
+}
+
+#restartBtn:hover {
+    background-color: hsl(30, 100%, calc(50% + var(--button-hover-lighten)));
+}
